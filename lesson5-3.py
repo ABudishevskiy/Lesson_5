@@ -11,9 +11,9 @@ print(slovarik)
 count = 0
 for i in slovarik:
     if slovarik[i] > count:
-        count = count + slovarik[i]
+        count = slovarik[i]
 for i in slovarik:
     if slovarik[i] == count:
         for k in listik:
-            if type(k) == i:
+            if isinstance(k, i):
                 print(k)
